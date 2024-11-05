@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Clone the repository
-                git 'https://github.com/nagashreya123/Dev.git'
+                // Clone the repository and specify the branch (e.g., 'main')
+                git branch: 'main', url: 'https://github.com/nagashreya123/Dev.git'
             }
         }
 
